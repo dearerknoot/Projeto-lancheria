@@ -1,0 +1,31 @@
+*{
+   margin: 0;
+}
+#main{
+   width: 100%;
+   background-color: gray;
+   height: 100px;
+   text-align: center;
+   padding-top: 20px;
+}
+.item{
+   border-style: solid;
+}
+#hamburger{
+   background-color: lightblue;
+   background-size: cover;
+   height: 100vh;
+}
+.content{
+   display: flex;
+   /* padding-top: 250px; */
+   justify-content: center;
+
+}
+.item{
+   /* width: 200px; */
+   text-align: center;
+   margin-left: 50px;
+   margin-right: 50px;
+   margin-top: 250px;
+}
