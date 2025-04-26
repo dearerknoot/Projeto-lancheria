@@ -3,33 +3,58 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Lanchonete Rápido & Saboroso</title>
+   <title>Rápido & Saboroso</title>
+   <link rel="shortcut icon" href="imagens/hamburger-removebg-preview.png">
    <link rel="stylesheet" href="index.css">
 </head>
 <body>
    
    <div id="main">
       <h1>Rápido & Saboroso</h1>
+      <div class="links">
+         <a href="#sobremesas"><img src="imagens/2234893-removebg-preview.png" class="icone"></a>
+         <a href="#hamburger"><img src="imagens/176152-removebg-preview.png" class="icone"></a>
+         <div class="links" id="carrinho">
+            <a href="lista.html">Carrinho</a><label id="alerta"></label>
+         </div>
+      </div>
    </div>
-   <a href="lista.html">Carrinho</a>
-   
-
    <section id="hamburger">
       <div class="content">
-         <div data-nome="Carne" data-numero="0" data-valor="15" data-desc="Hamburger de carne com salada e molho especial" class="item" id="ham1">
-            <h1>hamburger 1</h1>
+         <div data-nome="Carne"  data-valor="15" data-desc="Hamburger de carne com salada e molho especial" class="item" id="ham1">
+            <h1>Hamburger Carne</h1>
          </div>
-         <div data-nome="Calabresa" data-numero="1" data-valor="20" data-desc="Hamburger de calabresa com cebola e molho especial" class="item" id="ham2">
-            <h1>hamburger 2</h1>
+         <div data-nome="Calabresa"  data-valor="20" data-desc="Hamburger de calabresa com cebola e molho especial" class="item" id="ham2">
+            <h1>Hamburger Calabresa</h1>
          </div>
          </div>
       </div><br>
       <div class="content">
-         <div data-nome="Hamburger coração" data-numero="2" data-valor="25" data-desc="Hamburger de coração com cebola e molho especial" class="item" id="ham3">
-            <h1>hamburger 3</h1>
+         <div data-nome="Hamburger Coração" data-valor="25" data-desc="Hamburger de coração com cebola e molho especial" class="item" id="ham3">
+            <h1>Hamburger Coração</h1>
          </div>
-         <div data-nome="Podrão" data-numero="1" data-valor="27" data-desc="Hamburger podrão, combo de todos os igredientes" class="item" id="ham4">
-            <h1>hamburger 4</h1>
+         <div data-nome="Podrão" data-valor="27" data-desc="Hamburger podrão, combo de todos os igredientes" class="item" id="ham4">
+            <h1>Podrão</h1>
+         </div>
+         </div>
+      </div>  
+   </section>
+   <section id="sobremesas">
+      <div class="content">
+         <div data-nome="Açaí" data-valor="7,50" data-desc="Copo de açaí 500ml" class="item" id="acai">
+            <h1>Açaí 500ml</h1>
+         </div>
+         <div data-nome="Milkshake Chocolate 350ml" data-numero="5" data-valor="14,50" data-desc="Milkshake copo de 350ml" class="item" id="milk">
+            <h1>MilkShake 350ml</h1>
+         </div>
+         </div>
+      </div><br>
+      <div class="content">
+         <div data-nome="Bolo de pote" data-valor="8" data-desc="Bolo de pote caseiro" class="item" id="bolo">
+            <h1>Bolo de pote</h1>
+         </div>
+         <div data-nome="Mousse Morango" data-valor="10" data-desc="Mousse de morango no pote de  300ml" class="item" id="mousse">
+            <h1>Mousse Morango</h1>
          </div>
          </div>
       </div>  

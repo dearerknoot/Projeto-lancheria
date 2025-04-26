@@ -1,0 +1,11 @@
+#produtos{
+    border-style: solid;
+    width: 500px;
+    height: auto;
+}
+#main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

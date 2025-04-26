@@ -1,26 +1,32 @@
 *{
    margin: 0;
 }
+body{
+   background-image: url('');
+   background-size: cover;
+}
 #main{
    width: 100%;
-   background-color: gray;
-   height: 100px;
+   background-color: rgba(128, 128, 128, 0.507);
+   height: auto;
    text-align: center;
    padding-top: 20px;
+   position: fixed;
 }
 .item{
    border-style: solid;
+   display: flex;
 }
 #hamburger{
-   background-color: lightblue;
-   background-size: cover;
+   /* background-image: none;
+   background-size: cover; */
    height: 100vh;
 }
 .content{
    display: flex;
    /* padding-top: 250px; */
    justify-content: center;
-
+   color: red
 }
 .item{
    /* width: 200px; */
@@ -28,4 +34,14 @@
    margin-left: 50px;
    margin-right: 50px;
    margin-top: 250px;
+}
+.links{
+   font-size: large;
+}
+#sobremesas{
+   height: 100vh;
+}
+.icone{
+   width: 50px;
+   height: 50px;
 }
