@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            background-color: #555;
+        }
+        .barra-carregamento {
+            width: 300px;
+            height: 30px;
+            border: 2px solid #555;
+            border-radius: 15px;
+            overflow: hidden;
+            background-color: #eee;
+            margin: 50px auto;
+            }
+
+        .progresso {
+            height: 100%;
+            width: 0%;
+            background-color: #ff0000;
+            animation: carregar 20s linear forwards; 
+        }
+
+        @keyframes carregar {
+            from {
+                width: 0%;
+            }
+            to {
+                width: 100%;
+            }
+        }
+        #main{
+            margin-top: 250px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="barra-carregamento">
+            <div class="progresso"></div>
+        </div>
+        <h1 id="status">Recebendo seu pedido</h1>
+    </div>
+</body>
+<script>
+    let progresso = document.querySelector('.progresso');
+    const status = document.getElementById('status');
+    setTimeout(()=>{
+        status.textContent = 'Pedido em análise'
+    },3000)
+    setTimeout(()=>{
+        status.textContent = 'Pedido em produção'
+    },7000)
+    setTimeout(()=>{
+        status.textContent = 'Embalando seu pedido'
+    },15000)
+    progresso.addEventListener('animationend', () => { //pega o fim da animação em um listener 
+        status.textContent = 'Seu pedido saiu para entrega!'
+        setTimeout(()=>{
+            alert('Obrigado por escolher Rápido & Saboroso!');
+            window.location.href = 'index.html';
+        },2000)
+    });
+</script>
+</html>

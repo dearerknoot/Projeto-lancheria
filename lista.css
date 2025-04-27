@@ -8,4 +8,22 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-top: 200px;
+}
+.box{
+    display: flex;
+    justify-content: center;
+}
+#valorPagar{
+    margin-left: 10px;
+}
+.botao{
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    margin-left: 200px;
+    border-radius: 10px;
+}
+.botao h1{
+    padding: 10px;
 }
