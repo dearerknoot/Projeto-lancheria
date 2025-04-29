@@ -25,7 +25,7 @@
             height: 100%;
             width: 0%;
             background-color: #ff0000;
-            animation: carregar 20s linear forwards; 
+            animation: carregar 3s linear forwards; 
         }
 
         @keyframes carregar {
@@ -44,6 +44,10 @@
 </head>
 <body>
     <div id="main">
+        <h1 id="userName"></h1>
+        <h1 id="end"></h1>
+        <h1 id="num"></h1>
+        <h1 id="obs"></h1>
         <div class="barra-carregamento">
             <div class="progresso"></div>
         </div>
@@ -52,7 +56,25 @@
 </body>
 <script>
     let progresso = document.querySelector('.progresso');
+    let boxnome = document.getElementById('userName');
+    let boxend = document.getElementById('end');
+    let boxnum = document.getElementById('num');
+    let boxobs = document.getElementById('obs');
     const status = document.getElementById('status');
+    const dados = JSON.parse(localStorage.getItem('dados'));
+    const cliente = dados[0];
+    const endereco = dados[1];
+    const contato = dados[2];
+    const obs = dados[3];
+    if(obs == ''){
+        boxobs.textContent = 'Nenhuma observação';
+    }else{
+        boxobs.textContent = obs;
+    }
+    boxnome.textContent = cliente;
+    boxend.textContent = endereco;
+    boxnum.textContent = contato;
+
     setTimeout(()=>{
         status.textContent = 'Pedido em análise'
     },3000)
@@ -67,6 +89,7 @@
         setTimeout(()=>{
             alert('Obrigado por escolher Rápido & Saboroso!');
             window.location.href = 'index.html';
+            localStorage.clear();
         },2000)
     });
 </script>

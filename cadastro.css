@@ -1,0 +1,32 @@
+form{
+    max-width: 300px;
+    margin: auto;
+}
+
+input, button{
+    display: block;
+    width: 100%;
+    margin: 5px;
+    padding: 8px;
+}
+
+.erronome{
+color: red;
+position: absolute;
+top: 15px;
+left: 1000px;
+}
+
+.erroendereço{
+    color: red;
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    }
+
+.errocontato{
+color: red;
+position: absolute;
+top: 175px;
+left: 1000px;
+}  
