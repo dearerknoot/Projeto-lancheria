@@ -32,6 +32,8 @@ body{
 .imagem{
    width: 100px;
    height: 100px;
+   
+   /* display: none; */
 }
 .imagemb{
    width: 300px;

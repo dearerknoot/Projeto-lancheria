@@ -7,17 +7,21 @@ let itensLista = JSON.parse(localStorage.getItem('itensLista')) || [];
 let alerta = document.getElementById('alerta');
 let validado = JSON.parse(localStorage.getItem('validado')) || false;
 let divCarrinho = document.getElementById('carrinho');
-const linkCadastro = document.getElementById('boxCadastro');
-const imgCadastro = document.getElementById('imagemCadastro');
+let boxCadastro = document.getElementById('boxCadastro');
 if(!validado){
    if(itensLista.length === 0){
       divCarrinho.style.pointerEvents = 'none';
-      alerta.textContent = "X";
+      alerta.textContent = "X";  
    }
-     linkCadastro.style.backgroundColor = 'red'
+
+   let imagem = document.createElement('img');
+   imagem.setAttribute("src", 'imagens/imagemcadastro.png');
+   imagem.classList.add('imagem');
+   boxCadastro.appendChild(imagem)
+
    itens.forEach(item =>{
       item.addEventListener('click',()=>{
-         alert('Faça um cadastro para adicionar itens')
+         alert('Faça um cadastro para adicionar itens');
       })
    })
 }else{
@@ -36,7 +40,11 @@ if(!validado){
          // console.log(itensLista)
          alert('Item adicionado ao seu carrinho');
          localStorage.setItem('itensLista', JSON.stringify(itensLista));
-         window.location.reload();
+         // window.location.reload();
+         divCarrinho.style.pointerEvents = 'auto';
+         alerta.textContent = "";
+         
+         
       })
    })
    itensLista.forEach((item)=>{
