@@ -48,6 +48,19 @@ body{
    height: 300px;
    margin-left: 50px;
 }
+.imagemb{
+   width: 300px;
+   height: 300px;
+}
+.imagemcoca{
+   width: 500px;
+   height: 250px;
+}
+.imagembud{
+   width: 150px;
+   height: 300px;
+   margin-left: 50px;
+}
 #hamburger{
    background-image: none;
    background-size: cover;
