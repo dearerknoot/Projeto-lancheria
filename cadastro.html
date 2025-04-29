@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cadastro.css">
+
+</head>
+<body>
+    <form id="form">
+        <label for="nome">Seu nome</label><br>
+        <input id="cliente" type="text" placeholder="Nome"><br>
+        <span class="erronome" id="nomeErro"></span>
+        
+        <label for="endereço">Seu endereço</label><br>
+        <input id="endereço" type="text" placeholder="Endereço"><br>
+        <span class="erroendereço" id="endereçoErro"></span>
+        
+        <label for="numero">Seu numero para contato</label><br>
+        <input id="contato" type="text" placeholder="(_ _)_ _ _ _ _-_ _ _ _"><br>
+        <span class="errocontato" id="numeroErro"></span>
+        
+        <button type="button" onclick="avançar()">Avançar</button>
+
+    </form>
+</body>
+<script>
+    function avançar(){
+        let cliente = document.getElementById("cliente").value
+        let endereço = document.getElementById("endereço").value
+        let contato = document.getElementById("contato").value
+        let validado = JSON.parse(localStorage.getItem('validado')) || false
+      
+
+         if(cliente.length <= 0){
+           document.getElementById("nomeErro").innerHTML = "Campo obrigatório.";
+         }
+     
+         if(endereço.length <= 0){
+           document.getElementById("endereçoErro").innerHTML = "deve conter um endereço.";
+         }
+     
+         if(contato.length !== 11){
+           document.getElementById("numeroErro").innerHTML = "Numero invalido.";
+         }
+     
+         else{
+           window.location.href = 'index.html';
+           validado = true;
+           localStorage.setItem('validado', JSON.stringify(validado));
+         }
+     }
+</script>
+</html>
