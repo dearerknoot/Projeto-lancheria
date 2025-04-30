@@ -2,21 +2,32 @@
    margin: 0;
 }
 body{
-   background-image: url('');
+   background-image: url('imagens/1.png');
    background-size: cover;
 }
 #main{
    width: 100%;
-   background-color: rgba(128, 128, 128, 0.507);
+   background-color: #a61212;
    height: auto;
    text-align: center;
    padding-top: 20px;
    position: fixed;
+   color: yellow;
+}
+.logo{
+   width: 70px;
+   height: 60px;
+   position: absolute;
+   left: 38%;
 }
 .cadastro{
    position: fixed;
-   margin-top: 200px;
-   margin-left: 200px;
+   margin-top: 5px;
+   margin-left: 1600px;
+}
+.imagemCad{
+   width: 100px;
+   height: 100px;
 }
 .item{
    border-radius: 10px;
@@ -24,42 +35,28 @@ body{
    /* display: flex; */
    width: auto;
    height: auto;
-   background-color: yellow;
+   background-color: #a61212;
 }
 .item p{
    font-size: 20px;
 }
 .imagem{
-   width: 100px;
-   height: 100px;
+   width: 350px;
+   height: 300px;
    
    /* display: none; */
 }
 .imagemb{
-   width: 300px;
+   width: 350px;
    height: 300px;
 }
 .imagemcoca{
-   width: 500px;
-   height: 250px;
+   width: 350px;
+   height: 300px;
 }
 .imagembud{
-   width: 150px;
+   width: 350px;
    height: 300px;
-   margin-left: 50px;
-}
-.imagemb{
-   width: 300px;
-   height: 300px;
-}
-.imagemcoca{
-   width: 500px;
-   height: 250px;
-}
-.imagembud{
-   width: 150px;
-   height: 300px;
-   margin-left: 50px;
 }
 #hamburger{
    background-image: none;

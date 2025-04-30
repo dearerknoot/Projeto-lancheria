@@ -15,8 +15,8 @@ if(!validado){
    }
 
    let imagem = document.createElement('img');
-   imagem.setAttribute("src", 'imagens/imagemcadastro.png');
-   imagem.classList.add('imagem');
+   imagem.setAttribute("src", 'imagens/cadastro.png');
+   imagem.classList.add('imagemCad');
    boxCadastro.appendChild(imagem)
 
    itens.forEach(item =>{
