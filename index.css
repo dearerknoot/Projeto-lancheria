@@ -3,7 +3,10 @@
 }
 body{
    background-image: url('imagens/1.png');
-   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover; /* ou use "contain", dependendo do efeito desejado */
+   background-position: center;
 }
 #main{
    width: 100%;
@@ -18,12 +21,13 @@ body{
    width: 70px;
    height: 60px;
    position: absolute;
-   left: 38%;
+   left: 500px;
+   top: 5px;
 }
 .cadastro{
    position: fixed;
    margin-top: 5px;
-   margin-left: 1600px;
+   margin-left: 160px;
 }
 .imagemCad{
    width: 100px;
@@ -36,6 +40,7 @@ body{
    width: auto;
    height: auto;
    background-color: #a61212;
+   cursor: pointer;
 }
 .item p{
    font-size: 20px;
@@ -87,6 +92,7 @@ body{
    display: flex;
    justify-content: center;
    color: red;
+   cursor: pointer;
 }
 #sobremesas{
    background-image: none;

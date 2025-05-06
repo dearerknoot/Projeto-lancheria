@@ -1,3 +1,6 @@
+body{
+    background-image: url('imagens/fundo.jpg');
+}
 form{
     max-width: 300px;
     margin: auto;
@@ -9,12 +12,14 @@ input, button{
     margin: 5px;
     padding: 8px;
 }
-
+.label{
+    color: white;
+}
 .erronome{
 color: red;
 position: absolute;
 top: 15px;
-left: 1000px;
+left: 760px;
 }
 
 .erroendereço{
@@ -28,6 +33,6 @@ left: 1000px;
 color: red;
 position: absolute;
 top: 175px;
-left: 1000px;
+left: 680px;
 margin-left: 100px;
 }  

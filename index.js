@@ -15,7 +15,7 @@ if(!validado){
    }
 
    let imagem = document.createElement('img');
-   imagem.setAttribute("src", 'imagens/cadastro.png');
+   imagem.setAttribute("src", 'imagens/imagemcadastro.png');
    imagem.classList.add('imagemCad');
    boxCadastro.appendChild(imagem)
 
@@ -51,6 +51,7 @@ if(!validado){
       let produto = document.createElement('h1');
       let botaoProduto = document.createElement('button');
       botaoProduto.textContent = 'Remover';
+      botaoProduto.classList.add('remover')
       produto.textContent = item.nome + " " + item.valor + " R$ ";
       produtos.appendChild(produto);
       produto.appendChild(botaoProduto);
